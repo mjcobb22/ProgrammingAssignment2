@@ -1,7 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+## Takes a matrix that is passed in and provides it inverse and chaches
+## this result for future use.
 
 ## Write a short comment describing this function
+## allows a matrix to be set for the function and to retrieve it when needed(get)
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -20,6 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## checks if changes have been made and eiter recalculates or pulls chached calc
 
 cacheSolve <- function(x, ...) {
   m <- x$getinv()
